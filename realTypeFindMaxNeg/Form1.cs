@@ -28,7 +28,6 @@ namespace realTypeFindMaxNeg
             {
                 realTypeList.Add(new RealType());
                 generatedNumbersTb.AppendText(realTypeList[i] + "\n");
-                System.Threading.Thread.Sleep(100);
             }
         }
 

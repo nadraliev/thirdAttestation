@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10", "10", "{BD58A75B-51F8-49F5-BD49-C02F316391C3}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "filesLibrary", "filesLibrary\filesLibrary.csproj", "{5E533D3B-E87F-4DB2-9AFF-F00093D9BDF9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileLines", "FileStrings\FileLines.csproj", "{D3E86102-94CB-4926-91DD-C015FA8F46C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntervalsOfMonotony", "IntervalsOfMonotony\IntervalsOfMonotony.csproj", "{D8274FA1-DD75-44C6-9013-5437BA19BDFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{D3E86102-94CB-4926-91DD-C015FA8F46C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3E86102-94CB-4926-91DD-C015FA8F46C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3E86102-94CB-4926-91DD-C015FA8F46C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8274FA1-DD75-44C6-9013-5437BA19BDFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8274FA1-DD75-44C6-9013-5437BA19BDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8274FA1-DD75-44C6-9013-5437BA19BDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8274FA1-DD75-44C6-9013-5437BA19BDFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +68,6 @@ Global
 		{529C2FC9-988D-4933-8A7D-FE0C4F673872} = {89C1F412-8AD7-4178-B9BA-35F2A51450C5}
 		{5E533D3B-E87F-4DB2-9AFF-F00093D9BDF9} = {26917644-F80F-4223-BE77-E9646AA87285}
 		{D3E86102-94CB-4926-91DD-C015FA8F46C0} = {26917644-F80F-4223-BE77-E9646AA87285}
+		{D8274FA1-DD75-44C6-9013-5437BA19BDFC} = {26917644-F80F-4223-BE77-E9646AA87285}
 	EndGlobalSection
 EndGlobal

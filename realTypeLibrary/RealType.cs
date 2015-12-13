@@ -13,6 +13,8 @@ namespace realTypeLibrary
         public double mantissa { get; set; }
         public int grade { get; set; }
 
+        static Random random = new Random();
+
         public RealType(bool sign, double mantissa, int grade)
         {
             this.sign = sign;
@@ -22,7 +24,6 @@ namespace realTypeLibrary
 
         public RealType()
         {
-            Random random = new Random();
             sign = random.Next(2) == 1? true :false;
             mantissa = random.NextDouble();
             while (mantissa < 0.1) mantissa *= 10;
