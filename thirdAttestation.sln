@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10", "10", "{BD58A75B-51F8-49F5-BD49-C02F316391C3}"
 EndProject
@@ -14,6 +14,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "realTypeFindMaxNeg", "realTypeFindMaxNeg\realTypeFindMaxNeg.csproj", "{4F5D262F-8DB7-4563-878A-9C8C2D183E65}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "realTypeLibrary", "realTypeLibrary\realTypeLibrary.csproj", "{529C2FC9-988D-4933-8A7D-FE0C4F673872}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13", "13", "{26917644-F80F-4223-BE77-E9646AA87285}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "filesLibrary", "filesLibrary\filesLibrary.csproj", "{5E533D3B-E87F-4DB2-9AFF-F00093D9BDF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileLines", "FileStrings\FileLines.csproj", "{D3E86102-94CB-4926-91DD-C015FA8F46C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +43,14 @@ Global
 		{529C2FC9-988D-4933-8A7D-FE0C4F673872}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{529C2FC9-988D-4933-8A7D-FE0C4F673872}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{529C2FC9-988D-4933-8A7D-FE0C4F673872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E533D3B-E87F-4DB2-9AFF-F00093D9BDF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E533D3B-E87F-4DB2-9AFF-F00093D9BDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E533D3B-E87F-4DB2-9AFF-F00093D9BDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E533D3B-E87F-4DB2-9AFF-F00093D9BDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3E86102-94CB-4926-91DD-C015FA8F46C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E86102-94CB-4926-91DD-C015FA8F46C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E86102-94CB-4926-91DD-C015FA8F46C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E86102-94CB-4926-91DD-C015FA8F46C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,5 +60,7 @@ Global
 		{3517025D-87E1-4BEB-AEF8-4895BD777AFD} = {BD58A75B-51F8-49F5-BD49-C02F316391C3}
 		{4F5D262F-8DB7-4563-878A-9C8C2D183E65} = {89C1F412-8AD7-4178-B9BA-35F2A51450C5}
 		{529C2FC9-988D-4933-8A7D-FE0C4F673872} = {89C1F412-8AD7-4178-B9BA-35F2A51450C5}
+		{5E533D3B-E87F-4DB2-9AFF-F00093D9BDF9} = {26917644-F80F-4223-BE77-E9646AA87285}
+		{D3E86102-94CB-4926-91DD-C015FA8F46C0} = {26917644-F80F-4223-BE77-E9646AA87285}
 	EndGlobalSection
 EndGlobal
