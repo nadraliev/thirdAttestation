@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursionForm", "RecursionF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursionLibrary", "RecursionLibrary\RecursionLibrary.csproj", "{B576EDC5-0C81-4A0F-AED2-F74A15DF68AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsForm", "StudentsForm\StudentsForm.csproj", "{202E0E05-D9D0-4FCB-B2D5-C54B0259750E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{B576EDC5-0C81-4A0F-AED2-F74A15DF68AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B576EDC5-0C81-4A0F-AED2-F74A15DF68AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B576EDC5-0C81-4A0F-AED2-F74A15DF68AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{202E0E05-D9D0-4FCB-B2D5-C54B0259750E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202E0E05-D9D0-4FCB-B2D5-C54B0259750E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202E0E05-D9D0-4FCB-B2D5-C54B0259750E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202E0E05-D9D0-4FCB-B2D5-C54B0259750E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,5 +91,6 @@ Global
 		{D8274FA1-DD75-44C6-9013-5437BA19BDFC} = {26917644-F80F-4223-BE77-E9646AA87285}
 		{E0C19FE7-6E3F-4EA9-9191-6F84EC2B297F} = {983D1368-127E-48F5-8D73-180A4CBFAFF5}
 		{B576EDC5-0C81-4A0F-AED2-F74A15DF68AB} = {983D1368-127E-48F5-8D73-180A4CBFAFF5}
+		{202E0E05-D9D0-4FCB-B2D5-C54B0259750E} = {26917644-F80F-4223-BE77-E9646AA87285}
 	EndGlobalSection
 EndGlobal
