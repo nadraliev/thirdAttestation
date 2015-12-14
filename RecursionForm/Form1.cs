@@ -18,11 +18,21 @@ namespace RecursionForm
             InitializeComponent();
         }
 
-        private void countCommas_Click(object sender, EventArgs e)
+        Queue queue;
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            CommasInFile commasInFile = new CommasInFile(pathTb.Text);
-            numberOfCommas.Text = commasInFile.countCommas(commasInFile.makeOneString()).ToString();
-            numberOfCommas.Visible = true;
+            if (queue == null) queue = new Queue(addTb.Text);
+            else queue.add(addTb.Text);
+            queueTb.Clear();
+            addTb.Clear();
+            showQueue(queue);
+        }
+
+        public void showQueue(Queue queue)
+        {
+            queueTb.AppendText(queue.current + "\n");
+            if (queue.next != null) showQueue(queue.next);
         }
     }
 }

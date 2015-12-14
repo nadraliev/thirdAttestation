@@ -28,68 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.pathTb = new System.Windows.Forms.TextBox();
-            this.countCommas = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numberOfCommas = new System.Windows.Forms.Label();
+            this.addTb = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.queueTb = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // addTb
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Путь к файлу";
+            this.addTb.Location = new System.Drawing.Point(38, 28);
+            this.addTb.Name = "addTb";
+            this.addTb.Size = new System.Drawing.Size(138, 20);
+            this.addTb.TabIndex = 0;
             // 
-            // pathTb
+            // button1
             // 
-            this.pathTb.Location = new System.Drawing.Point(94, 13);
-            this.pathTb.Name = "pathTb";
-            this.pathTb.Size = new System.Drawing.Size(512, 20);
-            this.pathTb.TabIndex = 1;
+            this.button1.Location = new System.Drawing.Point(38, 72);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(138, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Добавить в очередь";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // countCommas
+            // queueTb
             // 
-            this.countCommas.Location = new System.Drawing.Point(205, 60);
-            this.countCommas.Name = "countCommas";
-            this.countCommas.Size = new System.Drawing.Size(198, 26);
-            this.countCommas.TabIndex = 2;
-            this.countCommas.Text = "Посчитать кол-во запятых";
-            this.countCommas.UseVisualStyleBackColor = true;
-            this.countCommas.Click += new System.EventHandler(this.countCommas_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(235, 112);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Результат";
-            // 
-            // numberOfCommas
-            // 
-            this.numberOfCommas.AutoSize = true;
-            this.numberOfCommas.Location = new System.Drawing.Point(301, 112);
-            this.numberOfCommas.Name = "numberOfCommas";
-            this.numberOfCommas.Size = new System.Drawing.Size(35, 13);
-            this.numberOfCommas.TabIndex = 4;
-            this.numberOfCommas.Text = "label3";
-            this.numberOfCommas.Visible = false;
+            this.queueTb.Location = new System.Drawing.Point(317, 28);
+            this.queueTb.Multiline = true;
+            this.queueTb.Name = "queueTb";
+            this.queueTb.ReadOnly = true;
+            this.queueTb.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.queueTb.Size = new System.Drawing.Size(273, 482);
+            this.queueTb.TabIndex = 2;
+            this.queueTb.WordWrap = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(618, 543);
-            this.Controls.Add(this.numberOfCommas);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.countCommas);
-            this.Controls.Add(this.pathTb);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.queueTb);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.addTb);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -99,11 +78,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox pathTb;
-        private System.Windows.Forms.Button countCommas;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label numberOfCommas;
+        private System.Windows.Forms.TextBox addTb;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox queueTb;
     }
 }
 
