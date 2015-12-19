@@ -21,12 +21,14 @@ namespace IntervalsOfMonotony
 
         private void countIntervalsOfMonotony_Click(object sender, EventArgs e)
         {
-            string[] numbersStrings = File.ReadAllLines(pathTb.Text)[0].Trim().Split(' ');
-            RealTypeList numbers = new RealTypeList();
-            for (int i = 0; i < numbersStrings.Length; i++)
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            string path = String.Empty;
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                numbers.Add(Double.Parse(numbersStrings[i]));
+                path = openFileDialog.FileName;
             }
+            RealTypeList numbers = new RealTypeList(path);
+            numbers.parse();
 
             increasingIntervals.Text = numbers.countIncreasingSeries().ToString();
             increasingIntervals.Visible = true;

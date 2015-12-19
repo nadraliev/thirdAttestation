@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.pathTb = new System.Windows.Forms.TextBox();
             this.countIntervalsOfMonotony = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,65 +37,54 @@
             this.decreasingIntervals = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Путь к файлу";
-            // 
-            // pathTb
-            // 
-            this.pathTb.Location = new System.Drawing.Point(94, 13);
-            this.pathTb.Name = "pathTb";
-            this.pathTb.Size = new System.Drawing.Size(484, 20);
-            this.pathTb.TabIndex = 1;
-            // 
             // countIntervalsOfMonotony
             // 
-            this.countIntervalsOfMonotony.Location = new System.Drawing.Point(182, 60);
+            this.countIntervalsOfMonotony.Location = new System.Drawing.Point(305, 102);
+            this.countIntervalsOfMonotony.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.countIntervalsOfMonotony.Name = "countIntervalsOfMonotony";
-            this.countIntervalsOfMonotony.Size = new System.Drawing.Size(207, 27);
+            this.countIntervalsOfMonotony.Size = new System.Drawing.Size(310, 42);
             this.countIntervalsOfMonotony.TabIndex = 2;
-            this.countIntervalsOfMonotony.Text = "Посчитать участки монотонности";
+            this.countIntervalsOfMonotony.Text = "Открыть файл посчитать участки монотонности";
             this.countIntervalsOfMonotony.UseVisualStyleBackColor = true;
             this.countIntervalsOfMonotony.Click += new System.EventHandler(this.countIntervalsOfMonotony_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 127);
+            this.label2.Location = new System.Drawing.Point(24, 195);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 13);
+            this.label2.Size = new System.Drawing.Size(185, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Участков возрастания:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 160);
+            this.label3.Location = new System.Drawing.Point(24, 246);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 13);
+            this.label3.Size = new System.Drawing.Size(160, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "Участков убывания:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 196);
+            this.label4.Location = new System.Drawing.Point(24, 302);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 13);
+            this.label4.Size = new System.Drawing.Size(197, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Участков монотонности:";
             // 
             // increasingIntervals
             // 
             this.increasingIntervals.AutoSize = true;
-            this.increasingIntervals.Location = new System.Drawing.Point(164, 127);
+            this.increasingIntervals.Location = new System.Drawing.Point(246, 195);
+            this.increasingIntervals.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.increasingIntervals.Name = "increasingIntervals";
-            this.increasingIntervals.Size = new System.Drawing.Size(35, 13);
+            this.increasingIntervals.Size = new System.Drawing.Size(51, 20);
             this.increasingIntervals.TabIndex = 6;
             this.increasingIntervals.Text = "label5";
             this.increasingIntervals.Visible = false;
@@ -105,9 +92,10 @@
             // monotonyIntervals
             // 
             this.monotonyIntervals.AutoSize = true;
-            this.monotonyIntervals.Location = new System.Drawing.Point(164, 196);
+            this.monotonyIntervals.Location = new System.Drawing.Point(246, 302);
+            this.monotonyIntervals.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.monotonyIntervals.Name = "monotonyIntervals";
-            this.monotonyIntervals.Size = new System.Drawing.Size(35, 13);
+            this.monotonyIntervals.Size = new System.Drawing.Size(51, 20);
             this.monotonyIntervals.TabIndex = 7;
             this.monotonyIntervals.Text = "label6";
             this.monotonyIntervals.Visible = false;
@@ -115,18 +103,19 @@
             // decreasingIntervals
             // 
             this.decreasingIntervals.AutoSize = true;
-            this.decreasingIntervals.Location = new System.Drawing.Point(164, 160);
+            this.decreasingIntervals.Location = new System.Drawing.Point(246, 246);
+            this.decreasingIntervals.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.decreasingIntervals.Name = "decreasingIntervals";
-            this.decreasingIntervals.Size = new System.Drawing.Size(35, 13);
+            this.decreasingIntervals.Size = new System.Drawing.Size(51, 20);
             this.decreasingIntervals.TabIndex = 8;
             this.decreasingIntervals.Text = "label7";
             this.decreasingIntervals.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 404);
+            this.ClientSize = new System.Drawing.Size(885, 622);
             this.Controls.Add(this.decreasingIntervals);
             this.Controls.Add(this.monotonyIntervals);
             this.Controls.Add(this.increasingIntervals);
@@ -134,8 +123,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.countIntervalsOfMonotony);
-            this.Controls.Add(this.pathTb);
-            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -144,9 +132,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox pathTb;
         private System.Windows.Forms.Button countIntervalsOfMonotony;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

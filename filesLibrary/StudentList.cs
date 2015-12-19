@@ -9,7 +9,7 @@ namespace filesLibrary
 {
     public class StudentList
     {
-        public List<Student> list;
+        public List<Student> list { get; set; }
 
         public StudentList(List<Student> list)
         {

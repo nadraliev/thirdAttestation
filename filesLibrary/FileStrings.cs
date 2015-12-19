@@ -16,14 +16,14 @@ namespace filesLibrary
             this.path = path;
         }
 
-        public void deleteString(int stringNumber)
+        public List<string> deleteString(int stringNumber)
         {
             List<string> strings = new List<string>(File.ReadAllLines(path));
             if (stringNumber < strings.Count && stringNumber >= 0)
             {
                 strings.RemoveAt(stringNumber);
-                File.WriteAllLines(path, strings);
             }
+            return strings;
         }
     }
 }

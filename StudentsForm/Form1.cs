@@ -23,34 +23,43 @@ namespace StudentsForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FileStream fileStream = new FileStream(pathTb.Text, FileMode.Open);
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
-            StudentList studentList = new StudentList((List<Student>) binaryFormatter.Deserialize(fileStream));
-            fileStream.Close();
-            SortedDictionary<int, double> marksByGroups = new SortedDictionary<int, double>();
-            foreach (Student student in studentList.list)
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            string path = String.Empty;
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                try {
-                    marksByGroups.Add(student.Group, studentList.findGroupAverageMark(student.Group));
-                } catch (Exception exc)
+                path = openFileDialog.FileName;
+                FileStream fileStream = new FileStream(path, FileMode.Open);
+                BinaryFormatter binaryFormatter = new BinaryFormatter();
+                StudentList studentList = new StudentList((List<Student>)binaryFormatter.Deserialize(fileStream));
+                fileStream.Close();
+                SortedDictionary<int, double> marksByGroups = new SortedDictionary<int, double>();
+                foreach (Student student in studentList.list)
                 {
+                    try
+                    {
+                        marksByGroups.Add(student.Group, studentList.findGroupAverageMark(student.Group));
+                    }
+                    catch (Exception exc)
+                    {
 
+                    }
                 }
-            }
-            SortedDictionary<int, double>.Enumerator enumerator = marksByGroups.GetEnumerator();
-            bool noGroups = true;
-            groupsLabel.Visible = true;
-            groupsLabel.ResetText();
-            for (int i = 0; i < marksByGroups.Count; i++)
-            {
-                enumerator.MoveNext();
-                if (enumerator.Current.Value < studentList.findFacultyAverageMark())
+                SortedDictionary<int, double>.Enumerator enumerator = marksByGroups.GetEnumerator();
+                bool noGroups = true;
+                groupsLabel.Visible = true;
+                groupsLabel.ResetText();
+                for (int i = 0; i < marksByGroups.Count; i++)
                 {
-                    groupsLabel.Text += enumerator.Current.Key.ToString() + " ";
-                    noGroups = false;
+                    enumerator.MoveNext();
+                    if (enumerator.Current.Value < studentList.findFacultyAverageMark())
+                    {
+                        groupsLabel.Text += enumerator.Current.Key.ToString() + " ";
+                        noGroups = false;
+                    }
                 }
+                if (noGroups) groupsLabel.Text = "No Such Groups";
             }
-            if (noGroups) groupsLabel.Text = "No Such Groups";
+            
         }
     }
 }

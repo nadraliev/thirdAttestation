@@ -28,32 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.pathTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.stringNumberNumeric = new System.Windows.Forms.NumericUpDown();
             this.deleteString = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.stringNumberNumeric)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "File path:";
-            // 
-            // pathTextBox
-            // 
-            this.pathTextBox.Location = new System.Drawing.Point(94, 27);
-            this.pathTextBox.Multiline = true;
-            this.pathTextBox.Name = "pathTextBox";
-            this.pathTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.pathTextBox.Size = new System.Drawing.Size(380, 72);
-            this.pathTextBox.TabIndex = 1;
-            this.pathTextBox.WordWrap = false;
             // 
             // label2
             // 
@@ -73,24 +53,33 @@
             // 
             // deleteString
             // 
-            this.deleteString.Location = new System.Drawing.Point(181, 228);
+            this.deleteString.Location = new System.Drawing.Point(117, 90);
             this.deleteString.Name = "deleteString";
-            this.deleteString.Size = new System.Drawing.Size(114, 41);
+            this.deleteString.Size = new System.Drawing.Size(255, 41);
             this.deleteString.TabIndex = 4;
-            this.deleteString.Text = "Удалить";
+            this.deleteString.Text = "Выбрать файл";
             this.deleteString.UseVisualStyleBackColor = true;
             this.deleteString.Click += new System.EventHandler(this.deleteString_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(117, 238);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(243, 45);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Удалить строки и сохранить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 500);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.deleteString);
             this.Controls.Add(this.stringNumberNumeric);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pathTextBox);
-            this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.stringNumberNumeric)).EndInit();
@@ -100,12 +89,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox pathTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown stringNumberNumeric;
         private System.Windows.Forms.Button deleteString;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -3,24 +3,47 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace filesLibrary
 {
-    public class RealTypeList : List<double>
+    public class RealTypeList
     {
+        private List<double> list { get; set; }
+        public string path { get; set; }
+
+        public RealTypeList(string path)
+        {
+            this.path = path;   
+        }
+
+        public void parse()
+        {
+            list = new List<double>();
+            string[] numbersStrings = File.ReadAllLines(path);
+            string[] temp;
+            for (int i = 0; i < numbersStrings.Length; i++)
+            {
+                temp = numbersStrings[i].Trim().Split(' ');
+                for (int k = 0; k < temp.Length; k++)
+                {
+                    list.Add(Double.Parse(temp[k]));
+                }
+            }
+        }
 
         public int countIncreasingSeries()
         {
             int result = 0;
             bool seriesIsGoing = false;
-            for (int i = 1; i < this.Count; i++)
+            for (int i = 1; i < list.Count; i++)
             {
-                if (!seriesIsGoing && this[i] > this[i - 1])
+                if (!seriesIsGoing && list[i] > list[i - 1])
                 {
                     result++;
                     seriesIsGoing = true;
                 }
-                else if (this[i] <= this[i - 1]) seriesIsGoing = false;
+                else if (list[i] <= list[i - 1]) seriesIsGoing = false;
             }
             return result;
         }
@@ -29,14 +52,14 @@ namespace filesLibrary
         {
             int result = 0;
             bool seriesIsGoing = false;
-            for (int i = 1; i < this.Count; i++)
+            for (int i = 1; i < list.Count; i++)
             {
-                if (!seriesIsGoing && this[i] < this[i - 1])
+                if (!seriesIsGoing && list[i] < list[i - 1])
                 {
                     result++;
                     seriesIsGoing = true;
                 }
-                else if (this[i] >= this[i - 1]) seriesIsGoing = false;
+                else if (list[i] >= list[i - 1]) seriesIsGoing = false;
             }
             return result;
         }
@@ -45,14 +68,14 @@ namespace filesLibrary
         {
             int result = 0;
             bool seriesIsGoing = false;
-            for (int i = 1; i < this.Count; i++)
+            for (int i = 1; i < list.Count; i++)
             {
-                if (!seriesIsGoing && this[i] >= this[i - 1])
+                if (!seriesIsGoing && list[i] >= list[i - 1])
                 {
                     result++;
                     seriesIsGoing = true;
                 }
-                else if (this[i] < this[i - 1]) seriesIsGoing = false;
+                else if (list[i] < list[i - 1]) seriesIsGoing = false;
             }
             return result;
         }
@@ -61,14 +84,14 @@ namespace filesLibrary
         {
             int result = 0;
             bool seriesIsGoing = false;
-            for (int i = 1; i < this.Count; i++)
+            for (int i = 1; i < list.Count; i++)
             {
-                if (!seriesIsGoing && this[i] <= this[i - 1])
+                if (!seriesIsGoing && list[i] <= list[i - 1])
                 {
                     result++;
                     seriesIsGoing = true;
                 }
-                else if (this[i] > this[i - 1]) seriesIsGoing = false;
+                else if (list[i] > list[i - 1]) seriesIsGoing = false;
             }
             return result;
         }
